@@ -1,0 +1,274 @@
+body {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  font-family: "Open Sans", sans-serif;
+  background: url("https://image.freepik.com/free-vector/grey-linen-texture-background_1053-253.jpg");
+  /*background-repeat: repeat-x;*/
+  /*background-size: 100% 100%;
+  background-attachment: fixed;*/
+}
+
+dialog {
+    width: 500px;
+    height: 250px;
+    background:#e8e8e8;
+    border: 1px solid #dadada;
+    font-family:sans-serif;
+    padding: 5px 10px 20px 20px;
+    top: 25%;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-active
+{
+   background-color: #359c00;
+   border: 1px solid #359c00;
+}
+
+.ui-tabs .ui-tabs-panel {
+  background-color: #0a838b;
+  height: 500px;
+}
+
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
+
+.panel-default>.panel-heading {
+  font-weight: bold;
+  color: #314563;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+  color: #56667e;
+}
+
+input {
+  width: 400px;
+  padding: 7px;
+  font-size: 13px;
+  border-radius: 4px;
+  margin: 2px;
+}
+
+button {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #377fea;
+  border: none;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.buttontype {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #377fea;
+  border: none;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h1, h2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #314563;
+}
+
+span {
+  color: #314563;
+}
+
+p {
+  color: #3b679e;
+  font-size: 16px;
+}
+
+li {
+  color: white;
+  font-size: 16px;
+}
+
+h2 {
+  color: #3b679e;
+  font-size: 25px;
+  -webkit-margin-before: 10px;
+}
+
+h3 {
+  font-weight: normal;
+  color: #3b679e;
+  font-size: 25px;
+  -webkit-margin-before: 10px;
+}
+
+h4 {
+  color: #003f9d;
+  -webkit-margin-before: 5px;
+  -webkit-margin-after: 5px;
+}
+
+.black {
+  color: black;
+}
+
+#balance {
+  color: black;
+}
+.pane {
+  display: inline-block;
+  overflow-y: auto;
+  max-height:530px;
+  width:100%;
+}
+
+table#reviewStatusTable {
+  font-size: 13px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+#reviewStatusTable th {
+    border: 1px solid #314563;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #314563;
+    color: #fff;
+    text-align: left;
+    padding: 8px;
+}
+
+#reviewStatusTable td {
+  border: 1px solid #314563;
+  text-align: left;
+  padding: 8px;
+  color: #314563;
+  background-color: white;
+}
+
+
+table#exchangeclaims {
+  font-size: 13px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+#exchangeclaims th {
+  border: 1px solid #667790;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: #667790;
+  color: #fff;
+  text-align: left;
+  padding: 8px;
+}
+
+#exchangeclaims td {
+  border: 1px solid #667790;
+  text-align: left;
+  padding: 8px;
+  color: #314563;
+  background-color: white;
+}
+
+table#claims {
+  font-size: 13px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+#claims th {
+    border: 1px solid #005a67;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #005a67;
+    color: #c6e8c0;
+    text-align: left;
+    padding: 8px;
+}
+
+#claims td {
+  border: 1px solid #005a67;
+  text-align: left;
+  padding: 8px;
+  color: white;
+}
+
+table#associationclaims {
+  font-size: 13px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+#associationclaims th {
+    border: 1px solid #005a67;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #005a67;
+    color: #c6e8c0;
+    text-align: left;
+    padding: 8px;
+}
+
+#associationclaims td {
+  border: 1px solid #005a67;
+  text-align: left;
+  padding: 8px;
+  color: white;
+}
+
+.created {
+  background-color: #359c00;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+.located {
+  background-color: #359c00;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.pricecalcuated {
+  background-color: #ffa500;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.review {
+  background-color: #741f84;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.readyforsale {
+  background-color: #359c00;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 3px;
+}

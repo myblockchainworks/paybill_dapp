@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pay Bills DApp</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./app.js"></script>
+</head>
+<body onload="App.loadPaymentModel()">
+  <h1>Pay Bills DApp</h1>
+  <div  style="float:right">
+    <span style="color:#8bff77"></span> <!--<span id="currentUserName"></span>-->
+  </div>
+
+  <div class="col-sm-13" >
+    <div class="panel panel-default">
+      <div class="panel-heading">My Bills <span style="float:right"><a href="index.html">New Payment</a></span></div>
+    <div class="panel-body">
+      <table id="reviewStatusTable">
+          <tr>
+              <th>Status</th>
+              <th>Date</th>
+              <th>Biller Code</th>
+              <th>Reference Number</th>
+              <th>Amount</th>
+              <th>Confirmation</th>
+              <th></th>
+          </tr>
+      </table>
+      <br />
+      <span id='noBills' style="display:none;">No bills yet, add <a href="index.html">new</a> !</span>
+    </div>
+  </div>
+  <div class="col-sm-13" >
+    <div class="panel panel-default">
+      <div class="panel-heading">Bill History</div>
+    <div class="panel-body">
+      <table id="exchangeclaims">
+          <tr>
+              <th>Date</th>
+              <th>Biller Code</th>
+              <th>Paid with</th>
+              <th>Amount</th>
+          </tr>
+      </table>
+      <br />
+      <span id="totalBills"></span>
+    </div>
+
+  <div class="modal fade" id="qrDialog" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"> Paying biller <label id="selected_biller"></label></h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-inline">
+            <label>Pay exactly : </label><i id="pay_amount"> </i>
+          </div>
+          <div class="form-inline">
+            <label>To address : </label><i id="contract_address"> </i>
+          </div>
+          <div class="text-center">
+            <img id="qrCode" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <span class="btn btn-success" style="float:right;" disabled="disabled">Awiaiting for payment <i class="fa fa-refresh fa-spin" aria-hidden="true"></i></span>
+          <button type="button" class="btn btn-danger" style="float:left;" onclick="App.cancelPayment()">Cancel Payment</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
